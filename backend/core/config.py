@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     API_PREFIX: str = "/api"
     DEBUG:bool =False
     DATABASE_URL: str
-    ALLOWED_ORIGINS: str = ""
+    ALLOWED_ORIGINS: str = "https://your-frontend.onrender.com"
     GOOGLE_API_KEY: Optional[str] = None
 
 # takes the allowed_origins in field_validator and converts the string (comman separated) into list else returns empty list
